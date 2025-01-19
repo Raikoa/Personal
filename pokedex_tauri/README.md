@@ -11,12 +11,12 @@ how to build and run:
 
 1. Clone the repository:
 
-git clone https://github.com/Raikoa/Personal/pokedex_tauri.git
+   git clone https://github.com/Raikoa/Personal/pokedex_tauri.git](https://github.com/Raikoa/Personal.git
 
 2. enter the local repo
    
-cd pokedex_tauri
+   cd pokedex_tauri
 
 3. build with tauri and node.js
 
-npm run tauri build
+   npm run tauri build

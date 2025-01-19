@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tauri App</title>
+    <script type="module" src="/main.js" defer></script>
+  </head>
+
+  <body>
+    <main class="container">
+      <h1>Tauri PokeDex</h1>
+      
+      <p>Search For a pokemon</p>  
+    
+      
+      <div id="history">
+    
+      <label for="History">History:</label>
+      <select id="Hist" name="History">
+        <option value="" selected disabled>Search History</option>
+        </select>
+      </div>
+      
+      <form class="row" id="poke-form" autocomplete="off">
+        <div id="searcher">
+        <input id="poke-input" placeholder="Enter a pokemon..." />
+        </div>
+        <button type="submit" id="search_btn">Search</button>
+      </form>
+      <div id="info">
+      <div id="top_info">
+        <p id="name"></p>
+        <table id="types">
+          <tr><td id="type1"></td><td id="type2"></td></tr>
+        </table>
+      </div>
+      <div id="middle">
+        <div id="pics">
+        <div id="sprite">
+          
+        </div>
+        <div id="toggle_shiny">
+          <label for="shinys">Sprites: </label>
+            <select id="shiny" name="shinys">
+              <option value="normal" selected="true">Normal</option>
+              <option value="shiny">Shiny</option>
+            </select>
+            <p id="error_shiny">No alternate Shiny</p>
+        </div>
+        </div>
+        <div id="extra_info">
+          <p id="dex_num"></p>
+          <p id="ablities"></p>
+          <div id="stats">
+            <table id="stats_table">
+              
+
+            </table>
+          </div>
+        </div>
+      </div>
+      <div id="bottom">
+        <div id="form_area">
+          <p id="form_label">forms: </p>
+          <div id="forms">
+          
+          </div>
+        </div>
+        <div id="evo">
+        </div>
+        <div id="moves">
+          <div id="moveSet">
+          <label for="gen">LearnSet: </label>
+          <select name="gen" id="gens">
+            <option value="" selected disabled>Select a generation</option>
+            </select>
+            </div>
+            <div id="learnset">
+        
+              <table id="level">
+
+              </table>
+              <table id="egg">
+
+              </table>
+              <table id="machine">
+
+              </table>
+              <table id="tutor">
+
+              </table>
+
+              <table id="special">
+
+              </table>
+            </div>
+          </div>
+      </div>
+      </div>
+      <p>powered by <a href="https://pokeapi.co/" target="_blank">pokeapi</a></p>
+    </main>
+  </body>
+</html>
